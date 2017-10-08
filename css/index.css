@@ -1,0 +1,365 @@
+/* reset */
+select,input{
+  border: none;
+  outline: none;
+}
+
+/* top */
+.top{
+  line-height: 30px;
+  font-size: 14px;
+  color: #868686;
+}
+.top p{
+  display: inline-block;
+}
+.top .call{
+  float: left;
+  padding-left: 20px;
+  background:url('img/icon-call.png') no-repeat left;
+}
+.top .welcome{
+  float: right;
+}
+.top a{
+  color: #2DA5E1;
+  padding-left: 10px;
+}
+
+/* header */
+.header .logo{
+  width: 402px;
+  height: 74px;
+  padding: 9px 0;
+  display: inline-block;
+}
+.header .logo img{
+  height: 100%;
+}
+.header .search{
+  width: 326px;
+  height: 38px;
+  position: absolute;
+  right: 0px;
+  top: 29px;
+  background-color: orange;
+}
+
+/* nav */
+.nav .link{
+  display: inline-block;
+  float: left;
+  padding-left: 30px;
+  line-height: 36px;/*当没有高度的时候，line-height是能让一个元素具有高度的*/
+  color: #fff;
+  font-size: 16px;
+  min-width: 80px;
+  text-align: center;
+}
+.nav a:hover{
+  color: #d7f3ff;
+}
+.nav .menu{
+  width: 130px;
+  padding-right: 30px;
+  background: #1fa4f0;
+  position: relative;
+}
+.nav .menu .menu-list{
+  list-style: none;
+  width: 100%;
+  height: 423px;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 2;
+  background: #1fa4f0;
+}
+
+.nav .menu-list .menu-list-item{
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  text-align: left;
+  padding: 5px 0 5px 0;
+  text-indent: 10px;
+}
+/* .nav .menu-list .menu-list-item .item-1:before{
+  content: ' ';
+  display: inline-block;
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  background: url('../img/icon-menu.jpg') no-repeat -22px 0;
+} */
+.nav .menu-list .menu-list-item:hover .item-1:before{
+  /* background: url('../img/icon-menu.jpg') no-repeat 0 0; */
+}
+.nav .menu-list .menu-list-item span{
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+}
+.nav .menu-list .menu-list-item:hover{
+  background: #fff;
+  border-left: 1px solid #1fa4f0;
+}
+.nav .menu-list .menu-list-item:hover .item-submenu{
+  display: block;
+}
+.nav .menu-list .menu-list-item:hover .item-list{
+  color: #666;
+}
+.nav .menu-list .item-list{
+  color: #fff;
+}
+
+.nav .item-submenu{
+  display: none;
+  position: absolute;
+  left: 190px;
+  top: 0;
+  width: 532px;
+  padding: 10px;
+  height: 404px;
+  background: #fff;
+  box-shadow: 5px 5px 5px #ddd;
+}
+.nav .item-submenu dt{
+  color: #666;
+  line-height: 30px;
+}
+.nav .item-submenu dd .item{
+  color: #666;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+  margin: 4px;
+  border-left: 1px solid #ccc;
+}
+.nav .item-submenu dd .item:hover{
+  color: #F32424;
+  
+}
+
+ 
+
+
+
+
+/* banner */
+.banner-search,
+.banner-help{
+  background-color: #fafafa;
+}
+
+.banner-search .caption,
+.banner-help .caption{
+  text-align: center;
+}
+.banner-search .text,
+.banner-help .text{
+  display: inline-block;
+  line-height: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #fec009;
+  font-size: 16px;
+  padding-left: 28px;
+  background: url('../img/icon-help.png') no-repeat 0 0;
+}
+.banner-search .form{
+  height: 150px;
+}
+.banner-search .form .line{
+  margin-bottom: 9px;
+  text-align: center;
+}
+.banner-search .form select{
+  width: 170px;
+  font-size: 12px;
+  z-index: 0;
+  border: 1px solid #dcdddd;
+  height: 26px;
+  line-height: 26px;
+  padding: 2px 0px;
+  color: #666;
+}
+.banner-search .submit{
+  text-align: center;
+}
+.banner-search .button{
+  width: 108px;
+  height: 32px;
+  background-color: #fecd09;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+}
+.banner-help .text{
+  color: #00b3ea;
+  background-position: 0 -23px;
+}
+.banner-help a{
+  float: left;
+  color: #00b3ea;
+  width: 84px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 41px;
+}
+
+/* content */
+.content-news .caption,
+.content-close .caption{
+  height: 38px;
+  line-height: 38px;
+  background: #f4f6fa;
+  text-indent: 20px;
+  font-size: 15px;
+  color: #fec009;
+}
+.content-news .caption .more,
+.content-close .caption .more{
+  float: right;
+  margin-right: 22px;
+  font-size: 12px;
+  color: #868686;
+}
+.content-news .list,
+.content-close .list{
+  padding: 15px 20px 13px 35px;
+  background:url('../img/list-yellow.jpg') 17px 20px no-repeat;
+}
+.content-news .list a,
+.content-close .list a{
+  display: block;
+  height: 29px;
+  line-height: 29px;
+  font-size: 12px;
+  color: #969696;
+  overflow: hidden;
+}
+.content-news .list a:hover,
+.content-close .list a:hover{
+  color:#4c4948;
+}
+.content-close .list{
+  background:url('../img/list-blue.jpg') 17px 20px no-repeat;
+}
+
+.content-tab{
+  background: none;
+}
+.content-tab .caption{
+  height: 34px;
+  line-height: 34px;
+  background: #f5f6fa;
+}
+.content-tab .caption a{
+  display: inline-block;
+  width: 112px;
+  height: 34px;
+  text-align: center;
+  color: #00b3ea;
+}
+.content-tab .caption .item_focus{
+  background: #60bff2;
+  color: #fff;
+}
+.content-tab .block{
+  border: 1px solid #f4f6fa;
+  height: 452px;
+}
+.content-tab .block-caption{
+  height: 26px;
+  line-height: 26px;
+  padding: 8px;
+  border-bottom: 1px solid #f4f6fa;
+}
+.content-tab .block-caption .item{
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  font-size: 12px;
+  color: #4c4948;
+}
+.content-tab .block-caption .item_focus{
+  background: #60bff2;
+  color: #fff;
+}
+.content-tab .block-content{
+  padding: 16px 12px;
+}
+.content-tab .block-content .block-more{
+  display: block;
+  line-height: 55px;
+  text-align: center;
+  font-size: 14px;
+  color: #5084c4;
+}
+.content-tab .block-content .block-list{
+
+}
+.content-tab .block-content .block-list .item{
+  float: left;
+  width: 216px;
+  height: 102px;
+  padding: 0 20px 10px 120px;
+  font-size: 12px;
+  position: relative;
+} 
+.content-tab .block-content .block-list .item img{
+  width: 110px;
+  height: 98px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.content-tab .block-content .block-list .item-name{
+  font-size: 14px;
+  color: #036eb7;
+  line-height: 21px;
+  padding-top: 13px;
+}
+.content-tab .block-content .block-list .item-level{
+  float: right;
+  font-size: 12px;
+  color: #979797;
+}
+.content-tab .block-content .block-list .item-phone,
+.content-tab .block-content .block-list .item-address{
+  line-height: 18px;
+  padding-bottom: 4px;
+  color: #666;
+}
+
+  /* block-text-lsit */
+.content-tab .block-content .block-text-list .item{
+  float: left;
+  width: 351px;
+  height: 27px;
+  font-size: 14px;
+  color: #666;
+  padding-top: 8px;
+  border-bottom: 1px dotted #dcdddd;
+}
+.content-tab .block-content .block-text-list .level{
+  float: right;
+}
+.content-tab .block-content .block-text-list .item:nth-child(2n){
+  padding-left: 10px;
+}
+
+/* footer */
+.footer{
+  height: 70px;
+  line-height: 70px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+
